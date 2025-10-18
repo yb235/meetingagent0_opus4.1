@@ -70,7 +70,7 @@ curl -X POST http://localhost:8000/api/v1/bots/deploy \
   -d '{
     "meeting_url": "https://meet.google.com/abc-defg-hij",
     "bot_name": "Meeting Assistant",
-    "entry_message": "Hello! I'\''m here to help with your meeting."
+    "entry_message": "Hello! I am here to help with your meeting."
   }'
 ```
 
@@ -123,7 +123,7 @@ Replace `{bot_id}` with the actual bot ID from the deployment response.
 curl -X POST http://localhost:8000/api/v1/bots/{bot_id}/speak \
   -H "Content-Type: application/json" \
   -d '{
-    "message": "Thank you everyone for joining today'\''s meeting."
+    "message": "Thank you everyone for joining the meeting today."
   }'
 ```
 
